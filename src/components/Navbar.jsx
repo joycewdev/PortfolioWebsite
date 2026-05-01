@@ -12,7 +12,8 @@ const navLinks = [
   { href: "/", label: "Home" },
   { href: "#experience", label: "Experience" },
   { href: "#projects", label: "Projects" },
-  { href: "/internetcorner", label: "Internet Corner" },
+  { href: "#techstack", label: "Tech Stack" },
+  { href: "/archive", label: "Archive" },
 ];
 
 const socialLinks = [
@@ -94,7 +95,7 @@ export default function Navbar() {
               key={navLink.href}
               href={navLink.href}
               onClick={() => setIsOpen(false)}
-              className="text-sm hover:text-black transition-colors"
+              className="text-sm text-[#4A4E69] hover:text-black transition-colors"
             >
               {navLink.label}
             </a>
