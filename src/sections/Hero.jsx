@@ -17,7 +17,7 @@ export default function Hero() {
           </a>
         </p>
       </div>
-      <p className="text-sm text-[#4a4e69] pt-2">
+      <p className="text-sm pt-2">
         <a
           href="/archive"
           className="hover:cursor-pointer hover:text-[#474C90] transition-colors"

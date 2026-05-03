@@ -33,7 +33,7 @@ const techData = [
 export default function TechStack() {
   return (
     <section id="techstack" className="w-full max-w-3xl mx-auto px-6 pb-10">
-      <p className="font-bold tracking-wide mb-4 text-[#4a4e69]">Tech Stack</p>
+      <p className="font-bold mb-4">Tech Stack</p>
       <div className="flex flex-wrap gap-3">
         {techData.map((tool) => {
           const Icon = tool.icon;

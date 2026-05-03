@@ -25,7 +25,7 @@ const projects = [
 export default function Projects() {
   return (
     <section id="projects" className="w-full max-w-3xl mx-auto px-6 pb-10">
-      <p className="font-bold tracking-wide mb-4">Projects</p>
+      <p className="font-bold mb-4">Projects</p>
       <div className="flex flex-col gap-3">
         {projects.map((project) => (
           <div key={project.title}>

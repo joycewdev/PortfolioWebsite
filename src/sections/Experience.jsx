@@ -87,7 +87,7 @@ const extracurricularExperiences = [
         title: "Athlete",
         startDate: "September 2024",
         endDate: "Present",
-        description: "Sword fighting for points ;)",
+        description: "",
       },
     ],
   },
