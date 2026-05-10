@@ -8,6 +8,7 @@ import Projects from "./sections/Projects";
 import TechStack from "./sections/TechStack";
 import Intro from "./sections/Intro";
 import Bookshelf from "./sections/Bookshelf";
+import Music from "./sections/Music";
 import "./index.css";
 
 const Home = () => (
@@ -23,6 +24,7 @@ const Life = () => (
   <>
       <Intro />
       <Bookshelf />
+      <Music />
   </>
 );
 
