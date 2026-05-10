@@ -6,18 +6,23 @@ import Navbar from "./components/Navbar";
 import Experience from "./sections/Experience";
 import Projects from "./sections/Projects";
 import TechStack from "./sections/TechStack";
+import Intro from "./sections/Intro";
 import "./index.css";
 
 const Home = () => (
   <>
-    <Hero />
-    <Experience />
-    <Projects />
-    <TechStack />
+      <Hero />
+      <Experience />
+      <Projects />
+      <TechStack />
   </>
 );
 
-const Life = () => <></>;
+const Life = () => (
+  <>
+      <Intro />
+  </>
+);
 
 const ScrollToSection = () => {
   const { pathname, hash } = useLocation();
