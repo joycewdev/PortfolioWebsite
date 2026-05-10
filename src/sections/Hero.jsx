@@ -3,7 +3,7 @@ import { MdArrowOutward } from "react-icons/md";
 export default function Hero() {
   return (
     <section className="w-full max-w-3xl mx-auto px-6 pt-16 pb-5 group">
-      <a href="/archive">
+      <a href="/life">
         <h1 id="name" className="text-5xl leading-tight mb-3 cursor-pointer">
           Joyce Wang
           <span className="inline-block ml-2 opacity-0 -translate-x-2 transition-all duration-300 ease-out group-hover:opacity-100 group-hover:translate-x-0">

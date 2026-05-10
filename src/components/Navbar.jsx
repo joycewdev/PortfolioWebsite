@@ -1,19 +1,14 @@
 import { useState } from "react";
-import {
-  FaBars,
-  FaXmark,
-  FaLinkedinIn,
-  FaGithub,
-  FaLink,
-} from "react-icons/fa6";
+import { FaBars, FaXmark, FaLinkedinIn, FaGithub } from "react-icons/fa6";
 import { IoMail } from "react-icons/io5";
+import { IoDocumentText } from "react-icons/io5";
 
 const navLinks = [
   { href: "/", label: "Home" },
-  { href: "#experience", label: "Experience" },
-  { href: "#projects", label: "Projects" },
-  { href: "#techstack", label: "Tech Stack" },
-  { href: "/archive", label: "Archive" },
+  { href: "/#experience", label: "Experience" },
+  { href: "/#projects", label: "Projects" },
+  { href: "/#techstack", label: "Tech Stack" },
+  { href: "/life", label: "Life" },
 ];
 
 const socialLinks = [
@@ -31,7 +26,7 @@ const socialLinks = [
   },
   {
     href: "", // add resume link
-    icon: FaLink,
+    icon: IoDocumentText,
   },
 ];
 
