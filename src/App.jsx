@@ -7,6 +7,7 @@ import Experience from "./sections/Experience";
 import Projects from "./sections/Projects";
 import TechStack from "./sections/TechStack";
 import Intro from "./sections/Intro";
+import Bookshelf from "./sections/Bookshelf";
 import "./index.css";
 
 const Home = () => (
@@ -21,6 +22,7 @@ const Home = () => (
 const Life = () => (
   <>
       <Intro />
+      <Bookshelf />
   </>
 );
 
