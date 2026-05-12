@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
+import { TextFade } from "./components/TextFade";
 import Footer from "./components/Footer";
 import Hero from "./sections/Hero";
 import Navbar from "./components/Navbar";
@@ -13,18 +14,22 @@ import "./index.css";
 
 const Home = () => (
   <>
+    <TextFade direction="down">
       <Hero />
       <Experience />
       <Projects />
       <TechStack />
+    </TextFade>
   </>
 );
 
 const Life = () => (
   <>
+    <TextFade direction="down" staggerChildren={0.2}>
       <Intro />
       <Bookshelf />
       <Music />
+    </TextFade>
   </>
 );
 
