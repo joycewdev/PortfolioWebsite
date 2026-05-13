@@ -20,7 +20,7 @@ export default function Projects() {
               </p>
               <p className="text-sm text-[#AAAEC7]">{project.techStack}</p>
             </div>
-            <p className="text-sm text-[#4A4E69] mt-1">{project.description}</p>
+            <p className="text-sm mt-1">{project.description}</p>
           </div>
         ))}
       </div>
