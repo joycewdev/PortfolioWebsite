@@ -15,9 +15,9 @@ export const songs = [
     href: "https://open.spotify.com/track/0SSXpjr8kYmCOziXhABIZl?si=90b1feb5d7314455",
   },
   {
-    title: "People Watching",
-    artist: "Conan Gray",
-    href: "https://open.spotify.com/track/3TFoEJe5zNuHZStRboWPxg?si=f681c6c4b97441db",
+    title: "Fallen Star",
+    artist: "The Neighbourhood",
+    href: "https://open.spotify.com/track/60F6pgM6H6miNr5AmjxwjL?si=2f63626a478a4b37",
   },
   {
     title: "Wishful Thinking",
