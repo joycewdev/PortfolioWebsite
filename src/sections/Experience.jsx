@@ -44,7 +44,7 @@ export default function Experiences() {
               <div className="group cursor-default">
                 <div className="flex items-start mb-3 gap-3 md:gap-2">
                   <img
-                    src={`/src/assets/logos/${experience.img}`}
+                    src={new URL(`../assets/logos/${experience.img}`, import.meta.url).href}
                     alt={`${experience.organization} logo`}
                     className="w-8 h-8 mt-2 md:w-6 md:h-6 md:mt-0 rounded-sm select-none"
                   />

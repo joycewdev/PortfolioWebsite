@@ -39,7 +39,7 @@ export default function Bookshelf() {
                 onClick={() => setSelectedBook(isSelected ? null : book)}
               >
                 <img
-                  src={`/src/assets/books/${book.title.split(" ").join("")}.jpg`}
+                  src={new URL(`../assets/books/${book.title.split(" ").join("")}.jpg`, import.meta.url).href}
                   alt={`${book.title} Cover`}
                   draggable="false"
                   className="w-full h-full object-cover select-none"

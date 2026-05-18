@@ -17,7 +17,7 @@ export default function Music() {
             <div className="flex items-center p-3 bg-[#F5F7FF] rounded-lg transition-all hover:shadow-md">
               <div className="flex items-center gap-4 w-full">
                 <img
-                  src={`/src/assets/music/${song.title.split(" ").join("")}.jpeg`}
+                  src={new URL(`../assets/music/${song.title.split(" ").join("")}.jpeg`, import.meta.url).href}
                   alt={song.title}
                   draggable="false"
                   className="w-11 h-11 flex-shrink-0 overflow-hidden rounded-md select-none"
