@@ -14,7 +14,7 @@ export default function Experiences() {
       <p className="font-bold tracking-wide mb-4">Experience</p>
 
       {/* Professional and Extracurricular Tabs */}
-      <div className="flex gap-3 mb-4">
+      <div className="flex gap-3 mb-4 select-none">
         <button
           onClick={() => setActiveTab("Professional")}
           className={`text-sm px-3 py-1 rounded transition-colors cursor-pointer ${
@@ -37,64 +37,39 @@ export default function Experiences() {
         </button>
       </div>
 
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col">
         {currentData.map((experience, i) => {
-          const isMultiRole = experience.roles.length > 1;
-
           return (
             <div key={`${activeTab}-${i}`} className="w-full cursor-default">
-              {isMultiRole ? (
-                // Multiple roles under same organization
-                <div className="flex flex-col">
-                  <a
-                    href={experience.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[#767BBC] underline underline-offset-4 hover:text-[#474C90] transition-colors mb-2 w-fit"
-                  >
-                    {experience.organization}
-                  </a>
-                  <div className="flex flex-col pl-2">
-                    {experience.roles.map((role, i) => (
-                      // Role title and dates
-                      <div key={i} className="group">
-                        <div className="flex justify-between items-center">
-                          <p>{role.title}</p>
-                          <p className="text-sm text-[#AAAEC7]">
-                            {role.startDate}
-                            {role.endDate ? ` — ${role.endDate}` : ""}
-                          </p>
-                        </div>
-                        <DescriptionList description={role.description} />
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              ) : (
-                // Single role for the organization
-                <div className="group cursor-default">
-                  <div className="flex justify-between items-center">
-                    <p>
+              <div className="group cursor-default">
+                <div className="flex items-start mb-3 gap-3 md:gap-2">
+                  <img
+                    src={`/src/assets/logos/${experience.img}`}
+                    alt={`${experience.organization} logo`}
+                    className="w-8 h-8 mt-2 md:w-6 md:h-6 md:mt-0 rounded-sm select-none"
+                  />
+                  <div className="flex flex-col w-full md:flex-row md:justify-between md:items-center md:gap-4">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:gap-1">
                       <a
                         href={experience.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-[#767BBC] underline underline-offset-4 hover:text-[#474C90] transition-colors"
+                        className="text-[#767BBC] hover:text-[#474C90] transition-colors"
                       >
                         {experience.organization}
                       </a>
-                      &nbsp;{experience.roles[0].title}
-                    </p>
+                      <p>{experience.role.title}</p>
+                    </div>
                     <p className="text-sm text-[#AAAEC7]">
-                      {experience.roles[0].startDate}
-                      {experience.roles[0].endDate
-                        ? ` — ${experience.roles[0].endDate}`
+                      {experience.role.startDate}
+                      {experience.role.endDate
+                        ? ` — ${experience.role.endDate}`
                         : ""}
                     </p>
                   </div>
-                  <DescriptionList description={experience.roles[0].description} />
                 </div>
-              )}
+                <DescriptionList description={experience.role.description} />
+              </div>
             </div>
           );
         })}
@@ -111,8 +86,8 @@ function DescriptionList({ description }) {
     .filter(Boolean);
   if (points.length === 0) return null;
   return (
-    <div className="max-h-0 overflow-hidden transition-all duration-500 ease-in-out group-hover:max-h-60 mb-2">
-      <ul className="text-sm text-[#4A4E69] pt-2 space-y-1">
+    <div className="max-h-0 overflow-hidden transition-all duration-500 ease-in-out group-hover:max-h-60">
+      <ul className="text-sm text-[#4A4E69] space-y-1 mb-4 ml-2">
         {points.map((pt, i) => (
           <li key={i} className="flex items-start">
             <span className="text-[#767BBC] mr-2">•</span>
