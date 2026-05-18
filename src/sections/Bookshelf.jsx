@@ -42,7 +42,7 @@ export default function Bookshelf() {
                   src={`/src/assets/books/${book.title.split(" ").join("")}.jpg`}
                   alt={`${book.title} Cover`}
                   draggable="false"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover select-none"
                 />
               </div>
               <div className="mt-4 text-center h-5 flex items-center justify-center">
@@ -62,7 +62,7 @@ export default function Bookshelf() {
             <div className="flex flex-col items-center justify-center w-full aspect-[2/3] border border-dashed border-[#AAAEC7] rounded-sm bg-[#F5F7FF]">
               <p className="text-xs text-[#AAAEC7]">Next great read.</p>
               <a
-                className="text-xs text-[#767BBC] underline underline-offset-4 hover:text-[#474C90]"
+                className="text-xs text-[#767BBC] hover:text-[#474C90]"
                 href="mailto:wangjoyce@live.com?subject=Book Recommendation"
               >
                 Send me a rec!

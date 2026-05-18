@@ -40,7 +40,7 @@ export const songs = [
     href: "https://open.spotify.com/track/3qhlB30KknSejmIvZZLjOD?si=600ec13f10034c6f",
   },
   {
-    title: "my ex's best friend (with blackbear)",
+    title: "my ex's best friend",
     artist: "mgk, blackbear",
     href: "https://open.spotify.com/track/7kDUspsoYfLkWnZR7qwHZl?si=b4df6723ae994984",
   },

@@ -23,7 +23,7 @@ const Home = () => (
   </>
 );
 
-const Life = () => (
+const More = () => (
   <>
     <TextFade direction="down" staggerChildren={0.2}>
       <Intro />
@@ -58,7 +58,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/life" element={<Life />} />
+        <Route path="/more" element={<More />} />
       </Routes>
       <Footer />
     </>

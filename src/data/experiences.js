@@ -4,7 +4,7 @@ export const professionalExperiences = [
     href: "https://www.york.ca/",
     img: "YorkRegion.png",
     role: {
-      title: "IT Service Desk Assistant",
+      title: "IT Support Analyst Student",
       startDate: "May 2026",
       endDate: "Present",
       description: "",

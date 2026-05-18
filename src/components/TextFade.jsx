@@ -1,3 +1,5 @@
+// Adapted from https://ui.indie-starter.dev/docs/text-animation
+
 "use client";
 
 import { motion, useInView } from "framer-motion";

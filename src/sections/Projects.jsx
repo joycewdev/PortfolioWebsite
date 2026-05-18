@@ -4,7 +4,7 @@ export default function Projects() {
   return (
     <section id="projects" className="w-full max-w-3xl mx-auto px-6 pb-10">
       <p className="font-bold mb-4">Projects</p>
-      <div className="flex flex-col gap-3">
+      <div className="flex flex-col gap-2">
         {projects.map((project) => (
           <div key={project.title}>
             <div className="flex justify-between items-center">
@@ -13,7 +13,7 @@ export default function Projects() {
                   href={project.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#767BBC] underline underline-offset-4 hover:text-[#474C90] transition-colors"
+                  className="text-[#767BBC] hover:text-[#474C90] transition-colors"
                 >
                   {project.title}
                 </a>

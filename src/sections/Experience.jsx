@@ -19,8 +19,8 @@ export default function Experiences() {
           onClick={() => setActiveTab("Professional")}
           className={`text-sm px-3 py-1 rounded transition-colors cursor-pointer ${
             activeTab === "Professional"
-              ? "bg-[#EFF1FF] text-black italic"
-              : "text-[#4a4e69] bg-[#F5F7FF] hover:bg-[#EFF1FF] hover:text-black"
+              ? "bg-[#EFF1FF] italic font-medium"
+              : "bg-[#F5F7FF] hover:bg-[#EFF1FF] hover:text-black"
           }`}
         >
           Professional
@@ -29,8 +29,8 @@ export default function Experiences() {
           onClick={() => setActiveTab("Extracurricular")}
           className={`text-sm px-3 py-1 rounded transition-colors cursor-pointer ${
             activeTab === "Extracurricular"
-              ? "bg-[#EFF1FF] text-black italic"
-              : "text-[#4a4e69] bg-[#F5F7FF] hover:bg-[#EFF1FF] hover:text-black"
+              ? "bg-[#EFF1FF] italic font-medium"
+              : "bg-[#F5F7FF] hover:bg-[#EFF1FF] hover:text-black"
           }`}
         >
           Extracurricular

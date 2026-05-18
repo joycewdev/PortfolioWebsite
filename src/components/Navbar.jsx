@@ -1,14 +1,14 @@
 import { useState } from "react";
 import { FaBars, FaXmark, FaLinkedinIn, FaGithub } from "react-icons/fa6";
 import { IoMail } from "react-icons/io5";
-import { IoDocumentText } from "react-icons/io5";
+// import { IoDocumentText } from "react-icons/io5";
 
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/#experience", label: "Experience" },
   { href: "/#projects", label: "Projects" },
   { href: "/#techstack", label: "Tech Stack" },
-  { href: "/life", label: "Life" },
+  { href: "/more", label: "More" },
 ];
 
 const socialLinks = [
@@ -24,10 +24,10 @@ const socialLinks = [
     href: "https://github.com/joycewdev",
     icon: FaGithub,
   },
-  {
-    href: "", // add resume link
-    icon: IoDocumentText,
-  },
+  // {
+  //   href: "", // add resume link
+  //   icon: IoDocumentText,
+  // },
 ];
 
 export default function Navbar() {
@@ -35,17 +35,17 @@ export default function Navbar() {
 
   return (
     <nav className="sticky top-0 z-50 w-full backdrop-blur-sm bg-white/80 border-b border-[#4A4E69]">
-      <div className="max-w-3xl mx-auto px-6 h-14 flex items-center justify-between text-[#4A4E69]">
+      <div className="max-w-3xl mx-auto px-6 h-14 flex items-center justify-between text-[#4A4E69] select-none">
         {/* Mobile Menu Toggle */}
         <button
-          className="md:hidden p-2 -ml-2 hover:text-black transition-colors"
+          className="sm:hidden p-2 -ml-2 hover:text-black transition-colors"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <FaXmark size={16} /> : <FaBars size={16} />}
         </button>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-6">
+        <div className="hidden sm:flex items-center gap-6">
           {navLinks.map((navLink) => (
             <a
               key={navLink.href}
@@ -80,7 +80,7 @@ export default function Navbar() {
 
       {/* Mobile Dropdown Menu */}
       <div
-        className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+        className={`sm:hidden overflow-hidden transition-all duration-300 ease-in-out ${
           isOpen ? "max-h-64" : "max-h-0"
         }`}
       >

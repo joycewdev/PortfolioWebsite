@@ -4,6 +4,16 @@
   font-family: "Space Grotesk", sans-serif;
 }
 
+*::selection {
+  background: #eff1ff;
+  color: #1900a8;
+}
+
+*::-moz-selection {
+  background: #eff1ff;
+  color: #1900a8;
+}
+
 section {
   scroll-margin-top: 5rem;
 }
@@ -21,5 +31,8 @@ buttons
 #EFF1FF
 
 light text
-#AAAEC7 
+#AAAEC7
+
+accented text
+#1900A8;
 */
