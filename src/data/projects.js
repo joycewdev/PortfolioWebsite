@@ -2,7 +2,7 @@ export const projects = [
   {
     title: "Personal Website",
     description: "",
-    href: "https://github.com/joycewdev/PersonalPortfolio",
+    href: "https://github.com/joycewdev/PortfolioWebsite",
     techStack: "React, Tailwind CSS",
   },
   {
