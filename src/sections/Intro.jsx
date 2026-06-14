@@ -10,7 +10,9 @@ export default function Intro() {
         <li>
           Meeting new people and going on adventures{" "}
           <a
-            href="mailto:wangjoyce@live.com"
+            href="https://www.linkedin.com/in/w-joyce/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-[#767BBC] hover:text-[#474C90] transition-colors"
           >
             ~ let's connect!
