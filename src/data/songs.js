@@ -39,14 +39,4 @@ export const songs = [
     artist: "Djo",
     href: "https://open.spotify.com/track/3qhlB30KknSejmIvZZLjOD?si=600ec13f10034c6f",
   },
-  {
-    title: "my ex's best friend",
-    artist: "mgk, blackbear",
-    href: "https://open.spotify.com/track/7kDUspsoYfLkWnZR7qwHZl?si=b4df6723ae994984",
-  },
-  {
-    title: "Hanging Out To Dry",
-    artist: "Florence Road",
-    href: "https://open.spotify.com/track/1GZ5KqHOdkU0cZoz1JfQo8?si=a625d2edbf7a4706",
-  },
 ];
