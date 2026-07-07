@@ -24,36 +24,27 @@ export default function Bookshelf() {
   const remainder = books.length % cols;
   const emptySpots = remainder === 0 ? 0 : cols - remainder;
   const placeholders = Array.from({ length: emptySpots });
-  const [selectedBook, setSelectedBook] = useState(null);
 
   return (
     <div className="w-full max-w-3xl mx-auto px-6 pt-16">
       <p className="font-bold mb-4">Bookshelf</p>
       <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 gap-6">
         {books.map((book, i) => {
-          const isSelected = selectedBook?.title === book.title;
           return (
             <div key={i} className="group flex flex-col items-center">
+              <a href={book.href} target="_blank" rel="noopener noreferrer">
               <div
                 className="relative w-full aspect-[2/3] overflow-hidden rounded-sm shadow-md transition-all hover:shadow-xl hover:-translate-y-1 hover:cursor-pointer"
-                onClick={() => setSelectedBook(isSelected ? null : book)}
               >
                 <img
                   src={new URL(`../assets/books/${book.title.split(" ").join("")}.jpg`, import.meta.url).href}
                   alt={`${book.title} Cover`}
                   draggable="false"
+                  loading="lazy"
                   className="w-full h-full object-cover select-none"
                 />
               </div>
-              <div className="mt-4 text-center h-5 flex items-center justify-center">
-                {isSelected ? (
-                  <p className="text-xs text-[#4A4E69]">{book.genres}</p>
-                ) : (
-                  <div className="mt-4 text-center">
-                    <p className="text-xs text-[#4A4E69]">{book.rating} / 5</p>
-                  </div>
-                )}
-              </div>
+              </a>
             </div>
           );
         })}

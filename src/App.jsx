@@ -3,12 +3,10 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import { TextFade } from "./components/TextFade";
 import Footer from "./components/Footer";
 import Hero from "./sections/Hero";
-import Navbar from "./components/Navbar";
 import Experience from "./sections/Experience";
 import Projects from "./sections/Projects";
 import TechStack from "./sections/TechStack";
 import Intro from "./sections/Intro";
-import Bookshelf from "./sections/Bookshelf";
 import Music from "./sections/Music";
 import "./index.css";
 
@@ -27,7 +25,6 @@ const More = () => (
   <>
     <TextFade direction="down" staggerChildren={0.2}>
       <Intro />
-      <Bookshelf />
       <Music />
     </TextFade>
   </>
@@ -55,7 +52,6 @@ function App() {
   return (
     <>
       <ScrollToSection />
-      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/more" element={<More />} />
