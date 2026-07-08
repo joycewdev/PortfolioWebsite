@@ -33,7 +33,7 @@ export default function Intro() {
           Reading (highly recommend{" "}
           <button
             onClick={nextBook}
-            className="group italic inline-flex items-center hover:text-[#474C90] transition-colors cursor-pointer"
+            className="group italic inline-flex items-center hover:text-[#4A4E69] transition-colors cursor-pointer"
           >
             <span>
               {currentBook.title} by {currentBook.author}
