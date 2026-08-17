@@ -7,7 +7,9 @@ export default function Intro() {
   const [currentBook, setCurrentBook] = useState(books[0]);
 
   const nextBook = () => {
-    const currentIndex = books.findIndex((book) => book.title === currentBook.title);
+    const currentIndex = books.findIndex(
+      (book) => book.title === currentBook.title,
+    );
     const nextIndex = (currentIndex + 1) % books.length;
     setCurrentBook(books[nextIndex]);
   };
@@ -23,7 +25,7 @@ export default function Intro() {
         </div>
         Home
       </a>
-      <p className="font-bold mb-4">Beyond the Screen</p>
+      <p className="font-bold mb-4">The world is vast</p>
       <ul className="text-sm list-disc pl-5 gap-2 flex flex-col">
         <li>Running around town, on the road to 10K</li>
         <li>Learning how to play the piano</li>

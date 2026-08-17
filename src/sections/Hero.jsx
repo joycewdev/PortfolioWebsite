@@ -2,7 +2,7 @@ import { MdArrowOutward } from "react-icons/md";
 
 export default function Hero() {
   return (
-    <section className="w-full max-w-3xl mx-auto px-6 pt-18 pb-5 group">
+    <section className="w-full max-w-3xl mx-auto px-6 pt-18 pb-2 group">
       <a href="/more">
         <h1 id="name" className="text-5xl leading-tight mb-3 cursor-pointer">
           Joyce Wang
@@ -24,9 +24,6 @@ export default function Hero() {
           </a>
         </p>
       </div>
-      <p className="text-sm pt-1">
-        IT @ York Region • Seeking Summer 2027 Internships
-      </p>
     </section>
   );
 }

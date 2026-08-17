@@ -6,8 +6,9 @@ export const professionalExperiences = [
     role: {
       title: "IT Support Analyst Student",
       startDate: "May 2026",
-      endDate: "Present",
-      description: "",
+      endDate: "Aug 2026",
+      description:
+        "Triaged and resolved hardware/software/network issues, and piloted a Sharepoint Knowledge Base",
     },
   },
   {
@@ -18,8 +19,7 @@ export const professionalExperiences = [
       title: "Technical Support Assistant",
       startDate: "May 2025",
       endDate: "Aug 2025",
-      description:
-        "`Managed 1000+ assets and data associated`Installed new devices, transferred existing devices to the new policy, assisted 40+ clients with software setup, and handled issues clients had with their new equipment as part of the PC Refresh Project`Collaborated with the Local Systems Support team to resolve and mitigate hardware and software issues",
+      description: "Asset management, troubleshooting, and PC Refresh Project",
     },
   },
   {
@@ -31,22 +31,12 @@ export const professionalExperiences = [
       startDate: "Jul 2023",
       endDate: "Nov 2023",
       description:
-        "`Graded work of 30+ students and assessed academic progress`Provided guided lessons and individualized support in math and reading to students aged 7-15`Collaborated with the Instructor and Centre Assistants to maintain an organized and professional learning environment",
+        "Graded student work and provided individualized support in math and reading",
     },
   },
 ];
 
 export const extracurricularExperiences = [
-  {
-    organization: "MacHacks 2026",
-    href: "https://www.mcmasterai.ca/machacks",
-    img: "MacHacks.png",
-    role: {
-      title: "Hacker",
-      startDate: "Mar 2026",
-      description: "",
-    },
-  },
   {
     organization: "McMaster AI in Medicine",
     href: "https://msumcmaster.ca/initiative/artificial-intelligence-in-medicine-student-society-aimed/",
@@ -56,7 +46,7 @@ export const extracurricularExperiences = [
       startDate: "Nov 2025",
       endDate: "Present",
       description:
-        "`Spearheaded the development of the club website`Collaborated with a team of 15+ students to organize workshops and speaker events on AI in Medicine`Recorded notes at bi-weekly meetings and managed internal documents",
+        "Led the development of the club website, organized workshops and speaker events, took meeting minutes, and managed internal documents",
     },
   },
   {
@@ -64,11 +54,11 @@ export const extracurricularExperiences = [
     href: "https://www.macengsociety.ca/",
     img: "MES.jpeg",
     role: {
-      title: "InfraTech Web Developer",
+      title: "InfraTech Software Developer",
       startDate: "Jul 2025",
       endDate: "Present",
       description:
-        "`Worked with a team of 5 to develop a new MES website with React and Tailwind CSS`Maintained the existing website in production`Participated in bi-weekly standup meetings, following agile methodology",
+        "Currently building the Clubs and Teams Portal! Collaborated with a sub-team to develop a new MES website with React and Tailwind CSS, and maintained the existing website in production",
     },
   },
   {
@@ -80,7 +70,7 @@ export const extracurricularExperiences = [
       startDate: "Oct 2024",
       endDate: "Apr 2025",
       description:
-        "`Collaborated with a team of 12+ students to plan and host monthly events for the first-year engineering community`Recorded notes at bi-weekly meetings and managed internal documents",
+        "Hosted monthly events for the first-year engineering community, took meeting minutes, and managed internal documents",
     },
   },
   {
@@ -102,7 +92,7 @@ export const extracurricularExperiences = [
       title: "Event Assistant",
       startDate: "Sep 2023",
       description:
-        "`Supported workshop hosts with setup, check-in, and attendee tracking`Provided schedule and direction guidance to hackers`Organized supplies in accessible locations within the building",
+        "Supported workshop hosts with setup, check-in, and attendee tracking, provided schedule/direction guidance, and organized supplies",
     },
   },
   {
@@ -114,7 +104,7 @@ export const extracurricularExperiences = [
       startDate: "Apr 2023",
       endDate: "Jun 2023",
       description:
-        "`Led and supervised various math, literacy, and group-bonding activities for a group of 20 students`Provided one-on-one support to 5+ students throughout the duration of the program",
+        "Led and supervised various math, literacy, and group-bonding activities",
     },
   },
 ];

@@ -44,7 +44,12 @@ export default function Experiences() {
               <div className="group cursor-default">
                 <div className="flex items-start mb-3 gap-3 md:gap-2">
                   <img
-                    src={new URL(`../assets/logos/${experience.img}`, import.meta.url).href}
+                    src={
+                      new URL(
+                        `../assets/logos/${experience.img}`,
+                        import.meta.url,
+                      ).href
+                    }
                     alt={`${experience.organization} logo`}
                     className="w-8 h-8 mt-2 md:w-6 md:h-6 md:mt-0 rounded-sm select-none"
                   />
@@ -80,20 +85,11 @@ export default function Experiences() {
 
 // Hoverable description list for each role
 function DescriptionList({ description }) {
-  const points = (description ?? "")
-    .split("`")
-    .map((pt) => pt.trim())
-    .filter(Boolean);
-  if (points.length === 0) return null;
+  if (!description) return null;
   return (
     <div className="max-h-0 overflow-hidden transition-all duration-500 ease-in-out group-hover:max-h-60">
-      <ul className="text-sm text-[#4A4E69] space-y-1 mb-4 ml-2">
-        {points.map((pt, i) => (
-          <li key={i} className="flex items-start">
-            <span className="text-[#767BBC] mr-2">•</span>
-            <span>{pt}</span>
-          </li>
-        ))}
+      <ul className="text-sm text-[#4A4E69] space-y-1 mb-4 ml-8">
+        <span>{description}</span>
       </ul>
     </div>
   );
