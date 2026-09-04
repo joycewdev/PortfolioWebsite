@@ -4,11 +4,11 @@ export const professionalExperiences = [
     href: "https://www.york.ca/",
     img: "YorkRegion.png",
     role: {
-      title: "IT Support Analyst Student",
+      title: "IT Support Analyst",
       startDate: "May 2026",
       endDate: "Aug 2026",
       description:
-        "Triaged and resolved hardware/software/network issues, and piloted a Sharepoint Knowledge Base",
+        "Triaged and resolved hardware/software/network issues, administered user accounts and secure credential resets, and piloted an AI-ready Sharepoint Knowledge Base",
     },
   },
   {
@@ -38,6 +38,17 @@ export const professionalExperiences = [
 
 export const extracurricularExperiences = [
   {
+    organization: "McMaster Biology Society",
+    href: "https://www.instagram.com/macbiosoc/?hl=en",
+    img: "MacBioSoc.jpg",
+    role: {
+      title: "VP Design",
+      startDate: "Sept 2026",
+      endDate: "Present",
+      description: "",
+    },
+  },
+  {
     organization: "McMaster AI in Medicine",
     href: "https://msumcmaster.ca/initiative/artificial-intelligence-in-medicine-student-society-aimed/",
     img: "AIMed.jpeg",
@@ -58,7 +69,7 @@ export const extracurricularExperiences = [
       startDate: "Jul 2025",
       endDate: "Present",
       description:
-        "Currently building the Clubs and Teams Portal! Collaborated with a sub-team to develop a new MES website with React and Tailwind CSS, and maintained the existing website in production",
+        "Currently building the Clubs and Teams Portal! Collaborated with a sub-team to develop a new MES website with TypeScript, Tailwind CSS, and Next.js, and maintained the existing website in production",
     },
   },
   {

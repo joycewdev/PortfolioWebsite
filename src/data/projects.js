@@ -6,6 +6,13 @@ export const projects = [
     techStack: "React, Tailwind CSS",
   },
   {
+    title: "Breast Cancer Classifier",
+    description:
+      "Classifies breast cancer tumours as malignant or benign using Logistic Regression.",
+    href: "https://github.com/joycewdev/BreastCancerClassifier",
+    techStack: "Python, Scikit-learn, Pandas",
+  },
+  {
     title: "Memory Match",
     description:
       "Interactive web app game where players flip over hidden cards and find matching pairs.",
